@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
+import ContactForm from "@/components/ContactForm";
 
 const Index = () => {
   return (
@@ -296,44 +297,7 @@ const Index = () => {
               </div>
             </div>
             
-            <Card className="shadow-xl border-0">
-              <CardHeader>
-                <CardTitle className="text-2xl font-heading text-center">Получить консультацию</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div>
-                  <label className="block text-sm font-medium text-nature-text mb-2">Ваше имя</label>
-                  <input 
-                    type="text" 
-                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:border-primary focus:outline-none"
-                    placeholder="Введите ваше имя"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-nature-text mb-2">Телефон</label>
-                  <input 
-                    type="tel" 
-                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:border-primary focus:outline-none"
-                    placeholder="+7 (___) ___-__-__"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-nature-text mb-2">Тип объекта</label>
-                  <select className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:border-primary focus:outline-none">
-                    <option>Частный дом</option>
-                    <option>Дача</option>
-                    <option>Коммерческий объект</option>
-                  </select>
-                </div>
-                <Button className="w-full bg-primary hover:bg-primary-700" size="lg">
-                  <Icon name="Send" size={20} className="mr-2" />
-                  Отправить заявку
-                </Button>
-                <p className="text-xs text-muted-foreground text-center">
-                  Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
-                </p>
-              </CardContent>
-            </Card>
+            <ContactForm />
           </div>
         </div>
       </section>
